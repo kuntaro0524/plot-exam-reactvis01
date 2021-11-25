@@ -42,6 +42,9 @@ export const LabeledHeatmap = () => {
       }))
     );
   }, []);
+
+  console.log(data);
+
   const { min, max } = data.reduce(
     (acc, row) => ({
       min: Math.min(acc.min, row.color),
